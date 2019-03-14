@@ -12,6 +12,10 @@ body {
   width: 50%;
   height: 100%;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -21,6 +25,7 @@ body {
 }
 
 .title > p {
+  margin: 0;
   text-align: center;
   font-size: 4em;
   text-transform: uppercase;
@@ -30,6 +35,46 @@ body {
   transform: scaleX(0);
   animation: reveal-title 5s;
   animation-fill-mode: forwards;
+}
+
+.content {
+  margin: 5% 15%;
+  letter-spacing: 0.1rem;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: justify;
+  color: #444444;
+  opacity: 0;
+  animation: fadeInDown 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.explore-button {
+  background-color: #89b8ff;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  border-left: 4px solid #0028ff36;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  opacity: 0;
+  animation: fadeInDown 1s ease-in-out;
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes reveal-title {
