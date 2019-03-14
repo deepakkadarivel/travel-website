@@ -2,6 +2,31 @@ body {
   margin: 0;
 }
 
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  top: 0;
+  font-size: 1.5em;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-family: "Unica One", cursive;
+  color: #89b8ff;
+  opacity: 0;
+  animation: fadeInDown 1s ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#logo {
+  margin: 0 10px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(./logo.svg) no-repeat center;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -29,7 +54,8 @@ body {
   text-align: center;
   font-size: 4em;
   text-transform: uppercase;
-  font-family: "Anton", sans-serif;
+  font-weight: 600;
+  font-family: "Unica One", cursive;
   letter-spacing: 0.5rem;
   opacity: 0;
   transform: scaleX(0);
@@ -48,6 +74,7 @@ body {
   animation: fadeInDown 2s;
   animation-delay: 5s;
   animation-fill-mode: forwards;
+  font-family: "Quicksand", sans-serif;
 }
 
 .explore-button {
